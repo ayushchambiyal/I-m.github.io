@@ -1,0 +1,546 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*
+Timeline css */
+
+.co {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #111;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+    }
+    .timeline ul li:hover::before {
+      background-color: aqua;
+    }
+  }
+  
+  
+
+
+html{
+    scroll-behavior: smooth;
+}
+.title1{
+    width: 60%;
+    display: inline-block;
+    margin:100px auto 0;
+    color:#fff;
+}
+.head-section{
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color:rgb(255, 255, 255)
+}
+.desc{
+    padding-top: 30px;
+}
+.social-menu ul{
+    position: absolute;
+    top:75%;
+    left:50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 25px;
+
+}
+.social-menu ul li a:hover{
+    transform: translate(0,-10px);
+}
+.social-menu ul li .fa-brands{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color:#000;
+
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url("ayush.png");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    transition: .4s;
+    color:yellowgreen;
+}
+.logo{
+    color:rgb(3, 3, 3);
+    font-size: 34;
+}
+span{
+    color: red;
+    font-size: larger;
+}
+.main{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.but{
+    position: absolute;
+    top: 59%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h6{
+    font-size: 45px;
+}
+h5{
+    font-size: 25px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+button{
+   background: rgb(241, 241, 39);
+   padding:12px 30px;
+   border:2px solid transparent;
+   text-align: center;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+button:hover{
+    background: red;
+    cursor: pointer;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+/* Section ka kaam kr lete ab*/
+
+.first{
+    border: 2px;
+    height:110vh;
+    background-color:rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.second{
+    height:100vh;
+    background-color:rgb(2, 4, 5);
+    box-sizing: border-box;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.short{
+    font-size: 20px;
+}
+.inner{
+    padding-top: 20px;
+}
+.contai{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skill-box{
+    padding: 1rem;
+    color:ddd;
+    cursor:pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.skill-title:after{
+    content:  '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: .6s;
+}
+.skill-box:hover .img{
+    transform: translateY(-10px)
+}
+.skill-title:before{
+    content:  '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius:0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: .6s;
+}
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
+.img{
+    width: 90px;
+    height: 70px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+.img:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height:90px;
+    background: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+.third{
+    height:100vh;
+    background-color:rgb(1, 6, 8);
+    box-sizing: border-box;
+}
+.fourth{
+    height:60vh;
+    background-color:#fff;
+    box-sizing: border-box;
+}
+
+/*THIRD CONTAINER-----I.E DOWNLOAD CV WALA*/
+:root{
+    --color:#ff282b;
+}
+.heythere{
+    color: white;
+    background: var(--color);
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.name{
+    color:white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.right p{
+    text-align: justify;
+}
+.btn{
+    text-align: center;
+    text-decoration: #ff282b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.btn::after{
+    content: '';
+    background: var(--color);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: width .5s ease;
+}
+.btn:hover::after{
+    width: 100%;
+}
+.right > *{
+    margin-bottom: 1.5rem;
+    color:#fff;
+}
+.conthird{
+    width: 100%;
+    max-width: 1160px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.left img{
+    margin-top: 28%;
+    max-width: 70%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+
+
+/*CONTACT ME*/
+.contact-info{
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    padding-left: 150px;
+  }
+  
+  
+  .card{
+    background: #000000;
+    padding: 0 50px;
+    margin: 0 20px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-icon{
+    font-size: 28px;
+    background: #e02706;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover .card-icon{
+    background: none;
+    color: #ca2609;
+    transform: scale(1.6);
+  }
+  
+  .card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+
+  /* FOOTER */
+  footer{
+      background: #000;
+      height: auto;
+      width: 100vw;
+      padding-top: 40px;
+      color: #fff;
+  }
+  .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  .footer-content footp{
+      max-width: 500px;
+      margin: 10px auto;
+  }
+  .socials {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+  }
+  .socials li{
+      margin:0 10px;
+  }
+  .socials a{
+      text-decoration: none;
+      color: #fff;
+
+  }
+  .socials a i{
+      font-size: 1.1rem;
+      transition: color .4s ease;
+  }
+  .socials a:hover i{
+      color: rgb(248, 11, 11);
+  }
+  .footer-bottom{
+      background: #000;
+      width: 100vw;
+      padding: 20px 0;
+      text-align: center;
+  }
+  .footbot{
+      font-size: 24px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+  }
+  
+
